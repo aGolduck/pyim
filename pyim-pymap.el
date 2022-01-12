@@ -824,7 +824,7 @@ pyim 在特定的时候需要读取一个汉字的拼音，这个工作由此完
                char-or-str)))
     (when (= (length key) 1)
       (gethash key pyim-pymap-cchar2py-cache))))
-(defalias '朋友输入法-拼音映射表-汉字转拼音-获取拼音)
+(defalias '朋友输入法-拼音映射表-汉字转拼音-获取拼音 'pyim-pymap-cchar2py-get)
 
 (defun pyim-pymap-cchar2py-cache-create (&optional force)
   "Build pinyin cchar->pinyin hashtable from `pyim-pymap'.
